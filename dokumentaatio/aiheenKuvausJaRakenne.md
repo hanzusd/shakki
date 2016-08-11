@@ -1,0 +1,1 @@
+![minimalistinenluokkakaavio](dokumentaatio/ekaluokkakaavio.png)
