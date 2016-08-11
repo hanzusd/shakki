@@ -1,7 +1,6 @@
-package shakkitest;
 
 
-import shakki.Nappula;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

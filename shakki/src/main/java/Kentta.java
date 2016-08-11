@@ -1,4 +1,3 @@
-package shakki;
 
 
 import java.util.ArrayList;

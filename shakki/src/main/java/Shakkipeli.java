@@ -1,4 +1,4 @@
-package shakki;
+
 
 import java.util.Scanner;
 

@@ -48,7 +48,7 @@
     <version>1.1.8</version>
     <configuration>
         <targetClasses>
-            <param>shakki.*</param>
+            <param>com.shakki.shakki.core.*</param>
         </targetClasses>
         <targetTests>
             <param>shakkitest.*</param>
