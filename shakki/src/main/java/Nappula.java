@@ -1,28 +1,40 @@
 
 public class Nappula {
+
     private Ruutu paikka;
     private String arvo;
-    
-    public Nappula(int x, int y) {
+    private String vari;
+
+    public Nappula(String arvo) {
         this.arvo = arvo;
-        this.paikka = new Ruutu(x, y);
     }
-    
-    public Ruutu liikuta(int i, int j) {
-        this.paikka = new Ruutu(i, j);
+
+    public void setPaikka(Ruutu paikka) {
+        this.paikka = paikka;
+    }
+
+    public void setArvo(String arvo) {
+        this.arvo = arvo;
+    }
+
+    public void setVari(String vari) {
+        this.vari = vari;
+    }
+
+    public Ruutu getRuutu() {
         return paikka;
     }
-    
-    public boolean saakoLiikkua() {
-        return true;
+
+    public String getArvo() {
+        return arvo;
     }
     
-    public Ruutu getPaikka() {
-        return paikka;
+    public String getVari() {
+        return vari;
     }
-    
+
     public String toString() {
-        return paikka.toString();
+        return arvo;
     }
-    
+
 }
