@@ -1,3 +1,5 @@
+package shakki;
+
 import java.util.Scanner;
 
 public class Shakkipeli {
@@ -5,7 +7,7 @@ public class Shakkipeli {
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
         
-        Kenttä kentta = new Kenttä();
+        Kentta kentta = new Kentta();
         System.out.println(kentta);
         kentta.liikuta(1, 2, 1, 4);
         System.out.println(kentta);

@@ -1,3 +1,5 @@
+package shakki;
+
 
 public class Ruutu {
 
@@ -25,14 +27,14 @@ public class Ruutu {
         mihin.lisaaNappula(nappula);
     }
 
-    public boolean saakoLiikkua(Saannot saannot, Ruutu mistä, Ruutu mihin) {
-        if (mistä.nappula.getArvo().equals("s")) {
+    public boolean saakoLiikkua(Saannot saannot, Ruutu mista, Ruutu mihin) {
+        if (mista.nappula.getArvo().equals("s")) {
 
-            if (saannot.saakoSotilasLiikkua(mistä, mihin) == true) {
+            if (saannot.saakoSotilasLiikkua(mista, mihin) == true) {
                 return true;
             }
-        } else if (mistä.nappula.getArvo().equals("t")) {
-            if (saannot.saakoTorniLiikkua(mistä, mihin) == true) {
+        } else if (mista.nappula.getArvo().equals("t")) {
+            if (saannot.saakoTorniLiikkua(mista, mihin) == true) {
                 return true;
             }
         }
@@ -40,7 +42,7 @@ public class Ruutu {
     }
 
     public boolean onNappula() {
-        if (nappula.getArvo().equals(" ")) {
+        if (ruudunArvo.equals(" ")) {
             return false;
         }
         return true;
@@ -52,6 +54,10 @@ public class Ruutu {
 
     public int getY() {
         return vertical;
+    }
+    
+    public String getRuudunArvo() {
+        return ruudunArvo;
     }
 
     public boolean equals(Ruutu ruutu) {
